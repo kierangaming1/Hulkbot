@@ -3,7 +3,7 @@ const ms = require('ms')
 module.exports.run = (bot, message, args, discord) => {
   let time = args.join(' ')
   let embed = new discord.RichEmbed()
-  .setTitle("Hulkbot Timer")
+  .setTitle("Animal Timer")
   .setDescription("Okay, I'll count down, and let you know when the time is up!")
   .setTimestamp()
   .setColor("RANDOM")
