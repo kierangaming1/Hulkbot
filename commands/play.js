@@ -6,7 +6,7 @@ const dl = require('ytdl-core')
 
 var queue = []
 var isPlaying = false
-var tester = "503589571355738113"
+var tester = "263694962418384897"
 var isTester = false
 
 module.exports.run = (bot, message, args) => {
