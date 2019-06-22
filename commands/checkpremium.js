@@ -3,7 +3,7 @@ const config = require('../json/config.json')
 
 module.exports.run = (bot, message, args, discord) => {
     function notfree() {
-    let ga = bot.guilds.get('356178662837452800')
+    let ga = bot.guilds.get('587763738602635274')
     let member = message.author
     if (message.member == message.guild.owner) {
     if (ga.members.get(member.id).roles.find('name','SuperPatron')) {
