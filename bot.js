@@ -15,7 +15,7 @@ ms = require('ms'),
 snekfetch = require('snekfetch'),
 cb = new cleverbot("sMNApmkOjMlZRlPZ", "gskxw3JBqEVGIAboBjOnvyTf8awM1MbS")
 config.updates = updates.join(' ')
-require('mongoose').connect(`@mongodb+srv://discbot:${process.env.mongopassword}@cluster0-9y6rl.mongodb.net/test?retryWrites=true&w=majority)
+require('mongoose').connect(`mongodb+srv://discbot:${process.env.mongopassword}@cluster0-9y6rl.mongodb.net/test?retryWrites=true&w=majority)
 const gdata = require('./database/mongoose/GuildData')
 // End of init
 
