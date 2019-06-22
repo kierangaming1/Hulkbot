@@ -20,7 +20,7 @@ module.exports.run = (bot, message, args) => {
     const mem = guild.members.get(m.user.id)
     
     if (mem.roles.get(tester)) {
-      isTester = true
+      isTester = false
     }
   }
   
