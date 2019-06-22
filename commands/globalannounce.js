@@ -19,8 +19,8 @@ function sendAnnounce(bot, message, args, guild) {
   let announce = new discord.RichEmbed()
     .setColor("7289DA")
     .setAuthor(`${bot.user.username} Announcement`)
-    .setDescription(`**Hello FHGDev here, creator of Hulkbot just wanting you to know, **\n${args.join(' ')}\n\n**This message was sent to *${guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
-    .setFooter(`An official announcement from FHGDev. (FHGDev#0666)`, bot.user.avatarURL)
+    .setDescription(`**Hello The Creators of animalland here, We just wanting you to know, **\n${args.join(' ')}\n\n**This message was sent to *${guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
+    .setFooter(`An official announcement from AnimalLand creators. (kierangaming1#9859)`, bot.user.avatarURL)
     .setTimestamp();
 
   if (sendChannel !== "") {
@@ -40,7 +40,7 @@ module.exports.run = (bot, message, args) => {
   let announceTest = new discord.RichEmbed()
     .setColor("7289DA")
     .setAuthor(`Test Announcement`, bot.user.avatarURL)
-    .setDescription(`**Hello FHGDev here, just sending an announcement...**\n${args.join(' ')}\n\n**This message was sent to *${message.guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
+    .setDescription(`**Hello AnlimalLand Creators here, just sending an announcement...**\n${args.join(' ')}\n\n**This message was sent to *${message.guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
     .setFooter(`Test Example reply with yes to send to every server!`)
     .setTimestamp();
 
