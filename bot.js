@@ -9,7 +9,7 @@ var prefix = process.env.prefix,
 {baselogger} = require('./src/logger.js'),
 result = Math.round(Math.random()),
 updates = ["Work command added.", "MongoDB is now Hulkbot's official database provider."],
-webhookchannelid = "441710517460008960",
+webhookchannelid = "591977587903954954",
 cleverbot = require('cleverbot.io'),
 ms = require('ms'),
 snekfetch = require('snekfetch'),
@@ -105,14 +105,14 @@ bot.on("message", message => {
       console.log(`${message.author.username} used the ${loggedcmd} command.`);
       baselogger(bot, `**Command Run**\n\n**Command:** ${loggedcmd}\n**User:** ${message.author.tag}\n**Message:** ${message.content}\n**Guild:** ${message.guild.name}\n**Channel:** ${message.channel.name}`);
   } 
-    if (message.content == "i love you hulkbot") {
+    if (message.content == "i love you kieran") {
     message.channel.send("oh god, not another one");
   }
   
-  if (message.isMentioned("294194506113220608")) {
+  if (message.isMentioned("589832011708104734")) {
     const em = new discord.RichEmbed()
-    .setTitle(`Hulkbot Intro`)
-    .setDescription(`Hey! Welcome to my intro! For help, use h!help! For info about me, use h!info!`)
+    .setTitle(`Animal Intro`)
+    .setDescription(`Hey! Welcome to my intro! For help, use !help! For info about me, use h!info!`)
     .setColor("GREEN")
     .setTimestamp()
     console.log('lol')
@@ -135,10 +135,10 @@ bot.login(process.env.botToken);
 let upmsg = `Oh yeah, more updates! New updates:\n${updates}`
   async function senddat(up,msg) {
     if (up == null) return;
-   await bot.channels.get('441982405985828864').send(msg).then(() => {
+   await bot.channels.get('591976394615947277').send(msg).then(() => {
      up.pop(up)
    })
-   await bot.channels.get('441982440005697539').send(msg).then(() => {
+   await bot.channels.get('591983009033355264').send(msg).then(() => {
      up.pop(up)
    })
   }
