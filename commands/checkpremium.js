@@ -6,7 +6,7 @@ module.exports.run = (bot, message, args, discord) => {
     let ga = bot.guilds.get('587763738602635274')
     let member = message.author
     if (message.member == message.guild.owner) {
-    if (ga.members.get(member.id).roles.find('name','SuperPatron')) {
+    if (ga.members.get(member.id).roles.find('name','Fox')) {
         
             let em = new discord.RichEmbed()
             .setTitle(":money_mouth: Hulkbot Premium :money_mouth:")
