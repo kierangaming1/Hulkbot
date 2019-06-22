@@ -50,7 +50,7 @@ bot.on("ready", () => {
     .catch(err => console.error(`Whoops something went wrong: ${err.body}`));
   
   setTimeout(() => {
-    bot.user.setActivity(`for h!help | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
+    bot.user.setActivity(`for !help | ${bot.guilds.array().length} servers`, {type: "WATCHING"});
   }, 20000)
 
   bot.guilds.forEach((guild, id) => {
