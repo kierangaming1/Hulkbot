@@ -9,18 +9,18 @@ var prefix = process.env.prefix,
 {baselogger} = require('./src/logger.js'),
 result = Math.round(Math.random()),
 updates = ["Work command added.", "MongoDB is now Hulkbot's official database provider."],
-webhookchannelid = "591977587903954954",
+webhookchannelid = "441710517460008960",
 cleverbot = require('cleverbot.io'),
 ms = require('ms'),
 snekfetch = require('snekfetch'),
 cb = new cleverbot("sMNApmkOjMlZRlPZ", "gskxw3JBqEVGIAboBjOnvyTf8awM1MbS")
 config.updates = updates.join(' ')
-require('mongoose').connect(`mongodb+srv://discbot:${process.env.mongopassword}@cluster0-9y6rl.mongodb.net/test?retryWrites=true&w=majority)
+require('mongoose').connect(`mongodb+srv://Hulkbot:${process.env.mongopassword}@hulkbot-2fias.gcp.mongodb.net/test?retryWrites=true`, { useNewUrlParser: true })
 const gdata = require('./database/mongoose/GuildData')
 // End of init
 
 // The bot's support server invite vvv
-bot.invite = "https://discord.gg/3NBPkuv"
+bot.invite = "https://discord.gg/qEFNkxB"
 // No more invite.
 
 // Gather commands
@@ -75,7 +75,7 @@ bot.on("message", message => {
     if (data == null) {
       const newG = new gdata({
         guildId: message.guild.id,
-        prefix: "!",
+        prefix: "h!",
         isPremium: false,
         welcome: null,
         modlog: null,
@@ -105,14 +105,14 @@ bot.on("message", message => {
       console.log(`${message.author.username} used the ${loggedcmd} command.`);
       baselogger(bot, `**Command Run**\n\n**Command:** ${loggedcmd}\n**User:** ${message.author.tag}\n**Message:** ${message.content}\n**Guild:** ${message.guild.name}\n**Channel:** ${message.channel.name}`);
   } 
-    if (message.content == "i love you animalland") {
+    if (message.content == "i love you hulkbot") {
     message.channel.send("oh god, not another one");
   }
   
-  if (message.isMentioned("589832011708104734")) {
+  if (message.isMentioned("294194506113220608")) {
     const em = new discord.RichEmbed()
-    .setTitle(`AnimalLand Intro`)
-    .setDescription(`Hey! Welcome to my intro! For help, use !help! For info about me, use !info!`)
+    .setTitle(`Hulkbot Intro`)
+    .setDescription(`Hey! Welcome to my intro! For help, use h!help! For info about me, use h!info!`)
     .setColor("GREEN")
     .setTimestamp()
     console.log('lol')
@@ -135,10 +135,10 @@ bot.login(process.env.botToken);
 let upmsg = `Oh yeah, more updates! New updates:\n${updates}`
   async function senddat(up,msg) {
     if (up == null) return;
-   await bot.channels.get('591976394615947277').send(msg).then(() => {
+   await bot.channels.get('441982405985828864').send(msg).then(() => {
      up.pop(up)
    })
-   await bot.channels.get('591976394615947277').send(msg).then(() => {
+   await bot.channels.get('441982440005697539').send(msg).then(() => {
      up.pop(up)
    })
   }
