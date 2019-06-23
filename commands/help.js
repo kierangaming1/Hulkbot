@@ -8,15 +8,15 @@ module.exports.run = (bot, message, args, discord) => {
 	let msg = args.join(" ")
 	let em = new discord.RichEmbed()
 	.setTitle("Help Menu")
-	.setFooter(`New help menu! If you like it, let me know with h!contact.`)
+	.setFooter(`New help menu! If you like it, let me know with !contact.`)
 	.setColor("RANDOM")
 	.setTimestamp()
 	
 	if (msg == categories[4].toLowerCase() || msg == categories[4]) {
 		em
 		.setTitle("✔ More help")
-		.setDescription("For more help, check out the [command docs](https://gist.github.com/FHGDev/67ed143f693a6424cc4ef7ce9ca3c796)!")
-		.addField("EVEN MORE HELP?", "Do you *still* need more help? Use the `h!contact` command, and I'll get to you ASAP.")
+		.setDescription("For more help, check out the [discord](https://discord.gg/txgh6jW)!")
+		.addField("EVEN MORE HELP?", "Do you *still* need more help? Use the `!contact` command, and I'll get to you ASAP.")
 		
 		message.channel.send({embed: em})
 	}
@@ -66,7 +66,7 @@ module.exports.run = (bot, message, args, discord) => {
 		.setDescription(`**Use h!help [category] for help on a certain category.**`)
 		.setTimestamp()
 		.addField("Categories", `**${categories.join("\n")}**`, true)
-		.addField("Links", "[Website](https://bot.hulkbot.tk/home) | [GitHub](https://github.com/FHGDev/Hulkbot)\n[Invite](https://discordapp.com/api/oauth2/authorize?client_id=294194506113220608&permissions=8&redirect_uri=https%3A%2F%2Fbot.hulkbot.tk%2Fhome&response_type=code&scope=bot%20guilds) | [Discord](https://discord.gg/eRfgZec)", true)
+		.addField("Links", "[Website](https://piecord.ml) | \n[Invite](https://discordapp.com/oauth2/authorize?client_id=548622504659255297&scope=bot&permissions=842018047) | [Discord](https://discord.gg/txgh6jW)", true)
 		
   	message.channel.send({embed: em})
 	};
