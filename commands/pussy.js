@@ -18,7 +18,7 @@ module.exports.run = (bot, message, args, discord) => {
     randomPuppy(sub)
         .then(url => {
             let embed = new discord.RichEmbed()
-            .setTitle("Hulkbot Pussy")
+            .setTitle("PieCord Pussy")
             .setDescription("Alright, here's a pussy pic...")
             .setImage(url)
             .setTimestamp()
