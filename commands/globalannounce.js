@@ -6,21 +6,21 @@ function sendAnnounce(bot, message, args, guild) {
   var sendChannel = "";
   if (config.donotAnnounce.includes(guild.id)) return message.channel.send(`ðŸ—³ Faild to send announcement to ${guild.name} (In DNA list)`).then(m => m.delete(20000));
   
-  if (guild.channels.find("name", "general")) {
-    sendChannel = guild.channels.find("name", "general");
+  if (guild.channels.find("name", "announcements")) {
+    sendChannel = guild.channels.find("name", "announcements");
   } else if (guild.channels.find("name", "chat")) {
     sendChannel = guild.channels.find("name", "chat");
   } else if (guild.channels.find("name", "lounge")) {
     sendChannel = guild.channels.find("name", "lounge");
-  } else if (guild.channels.find("name", "announcements")) {
-    sendChannel = guild.channels.find("name", "announcements");
+  } else if (guild.channels.find("name", "general")) {
+    sendChannel = guild.channels.find("name", "general");
   }
 
   let announce = new discord.RichEmbed()
     .setColor("7289DA")
     .setAuthor(`${bot.user.username} Announcement`)
-    .setDescription(`**Hello The Creators of animalland here, We just wanting you to know, **\n${args.join(' ')}\n\n**This message was sent to *${guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
-    .setFooter(`An official announcement from AnimalLand creators. (kierangaming1#9859)`, bot.user.avatarURL)
+    .setDescription(`**Hello The Creators of PieCord here, We just wanting you to know, **\n${args.join(' ')}\n\n**This message was sent to *${guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
+    .setFooter(`An official announcement from PieCord creators. (kierangaming1#9859)`, bot.user.avatarURL)
     .setTimestamp();
 
   if (sendChannel !== "") {
@@ -40,7 +40,7 @@ module.exports.run = (bot, message, args) => {
   let announceTest = new discord.RichEmbed()
     .setColor("7289DA")
     .setAuthor(`Test Announcement`, bot.user.avatarURL)
-    .setDescription(`**Hello AnlimalLand Creators here, just sending an announcement...**\n${args.join(' ')}\n\n**This message was sent to *${message.guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
+    .setDescription(`**Hello PieCord Creators here, just sending an announcement...**\n${args.join(' ')}\n\n**This message was sent to *${message.guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
     .setFooter(`Test Example reply with yes to send to every server!`)
     .setTimestamp();
 
