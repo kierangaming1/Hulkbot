@@ -8,7 +8,7 @@ module.exports.run = (bot, message, args, discord) => {
  let res = results[Math.floor(Math.random()*results.length)]
  
  em
- .setTitle("Hulkbot Eight-ball")
+ .setTitle("PieCord Eight-ball")
  .setDescription(res)
  .setTimestamp()
  .setColor("RANDOM")
