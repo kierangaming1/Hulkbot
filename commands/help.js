@@ -63,7 +63,7 @@ module.exports.run = (bot, message, args, discord) => {
 	
 	if (!msg) {
 		em
-		.setDescription(`**Use h!help [category] for help on a certain category.**`)
+		.setDescription(`**Use !help [category] for help on a certain category.**`)
 		.setTimestamp()
 		.addField("Categories", `**${categories.join("\n")}**`, true)
 		.addField("Links", "[Website](https://piecord.ml) | \n[Invite](https://discordapp.com/oauth2/authorize?client_id=548622504659255297&scope=bot&permissions=842018047) | [Discord](https://discord.gg/txgh6jW)", true)
