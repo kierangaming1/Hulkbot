@@ -1,6 +1,6 @@
 module.exports.run = (bot, message, args) => {
-  message.channel.send("Hulk's YouTube channel is https://www.youtube.com/c/FreakingHulkGaming")
-  message.channel.send("This command was made on the FreakingHulk Gaming livestream.")
+  message.channel.send("PieCord has not got a youtube channel yet sorry.")
+
 }
 
 module.exports.help = {
