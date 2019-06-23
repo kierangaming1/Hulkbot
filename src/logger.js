@@ -1,5 +1,5 @@
 const discord = require('discord.js');
-let logchannel = "591984423818362885";
+let logchannel = "592308975949840393";
 
 async function baselogger(bot, desc, icon) {
   let messages = await bot.channels.get(logchannel).fetchMessages({limit: 5});
@@ -20,7 +20,7 @@ async function baselogger(bot, desc, icon) {
   const thumburi = icon || ""
   let embed = new discord.RichEmbed()
     .setTimestamp()
-    .setAuthor(`Animal Logs ✍`, bot.user.avatarURL)
+    .setAuthor(`PieCord Logs ✍`, bot.user.avatarURL)
     .setThumbnail(thumburi)
     .setColor("ff3333")
     .setDescription(desc)
