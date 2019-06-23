@@ -19,7 +19,7 @@ async function runCmd(bot, message, args) {
       newg.save()
     }
     const em = new (require('discord.js').RichEmbed)()
-    .setTitle("Hulkbot Prefix Changer")
+    .setTitle("PieCord Prefix Changer")
     .setDescription(`I changed my prefix for this guild!`)
     .addField(`Previous Prefix`, data.prefix, true)
     .addField(`New Prefix`, prefix, true)
@@ -27,7 +27,7 @@ async function runCmd(bot, message, args) {
     .setColor("GREEN")
     message.channel.send({embed: em})
     data.prefix = prefix;
-    data.save().catch(e => message.channel.send("Hmm... Something went wrong. Please try again, or contact FHGDev with \`h!contact`."))
+    data.save().catch(e => message.channel.send("Hmm... Something went wrong. Please try again, or contact Kieran with \`!contact`."))
   })
 } 
 
