@@ -3,10 +3,10 @@ const config = require('../json/config.json')
 
 module.exports.run = (bot, message, args, discord) => {
     function notfree() {
-    let ga = bot.guilds.get('587763738602635274')
+    let ga = bot.guilds.get('545020748197003264')
     let member = message.author
     if (message.member == message.guild.owner) {
-    if (ga.members.get(member.id).roles.find('name','Fox')) {
+    if (ga.members.get(member.id).roles.find('name','Yay')) {
         
             let em = new discord.RichEmbed()
             .setTitle(":money_mouth: Hulkbot Premium :money_mouth:")
@@ -18,7 +18,7 @@ module.exports.run = (bot, message, args, discord) => {
     } else {
         let em = new discord.RichEmbed()
         .setTitle(":money_mouth: Hulkbot Premium :money_mouth:")
-        .setDescription(`:thumbsdown: Your premium status is unactive. Buy premium [here!](https://www.patreon.com/bePatron?c=1365207 "buy premium") :thumbsdown:`)
+        .setDescription(`:thumbsdown: Your premium status is unactive. You can get this by asking kieran.) :thumbsdown:`)
         .setThumbnail(bot.user.avatarURL)
         .setColor("RED")
         .setTimestamp()
@@ -35,10 +35,10 @@ module.exports.run = (bot, message, args, discord) => {
     message.channel.send({embed: em})
   }
     }
-    if (bot.guilds.size >= 50 && !bot.guilds.size <= 55 ) {
+    if (bot.guilds.size >= 150 && !bot.guilds.size <= 155 ) {
         let em = new discord.RichEmbed()
         .setTitle("Premium Check")
-        .setDescription("PREMIUM IS FREE! (until bot reaches 55 servers.) ENJOY! :smile:")
+        .setDescription("PREMIUM IS ALLWAYS FREE!  ENJOY! :smile:")
         .setTimestamp()
         .setFooter()
         message.channel.send({embed: em})
