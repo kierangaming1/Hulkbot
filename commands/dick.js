@@ -2,7 +2,7 @@ const search = require('random-puppy')
 
 module.exports.run = (bot, message, args, discord) => {
   let em = new discord.RichEmbed()
-  .setTitle("Hulkbot Dick")
+  .setTitle("PieCord Dick")
   .setDescription("Here's a dick pic...")
   .setTimestamp()
   .setFooter(`Requested by ${message.author.username}`)
