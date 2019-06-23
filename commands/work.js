@@ -13,7 +13,7 @@ module.exports.run = (bot, message, args) => {
       newD.save()
       
       let em = new (require('discord.js').RichEmbed)()
-      .setTitle("Hulkbot Work")
+      .setTitle("PieCord Work")
       .setDescription(`You successfully worked at the office today!`)
       .addField(`Earned Cash:`, `$${randomcoins}.00`, true)
       .addField("Balance:", `$${randomcoins}.00`, true)
@@ -26,7 +26,7 @@ module.exports.run = (bot, message, args) => {
       data.save()
       
       let em = new (require('discord.js').RichEmbed)()
-      .setTitle("Hulkbot Work")
+      .setTitle("PieCord Work")
       .setDescription(`You successfully worked at the office today!`)
       .addField(`Earned Cash:`, `$${randomcoins}.00`, true)
       .addField("Balance:", `$${data.cash}.00`, true)
