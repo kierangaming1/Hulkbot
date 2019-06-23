@@ -2,7 +2,7 @@ const code = require("../json/redeem/codes.json").codes
 
 module.exports.run = (bot, message, args, discord) => {
   let msg = args.join(" ")
-  if (code.includes(msg)) {
+  if (codes.includes(msg)) {
     let em = new discord.RichEmbed()
     .setTitle(`${bot.user.displayName} Code Redemption`)
     .setDescription(`Correct Code! Use this invite to go to the PieCord Base discord where you'll get the Yay role, and more!`)
