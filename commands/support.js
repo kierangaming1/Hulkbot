@@ -3,7 +3,7 @@ const em = new discord.RichEmbed()
 
 module.exports.run = (bot, message, args) => {
   em
-  .addField("Support Server", `You can join our support server [here](https://discord.gg/AcpYafG).`)
+  .addField("Support Server", `You can join our support server [here](https://discord.gg/txgh6jW).`)
   .setTimestamp()
   .setColor("RANDOM")
   message.channel.send({embed: em})
