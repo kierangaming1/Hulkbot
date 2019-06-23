@@ -1,5 +1,5 @@
 module.exports.run = (bot, message, args) => {
- if (message.guild.id == '318532861638737931') {
+ if (message.guild.id == '545020748197003264') {
   if (!message.member.hasPermission("ADMINISTRATOR")) return;
  }
  message.delete(1000)
