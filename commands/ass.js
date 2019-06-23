@@ -14,7 +14,7 @@ module.exports.run = (bot, message, args, discord) => {
   
   puppy(result).then(url => {
     let embed = new discord.RichEmbed()
-    .setTitle("Hulkbot Ass")
+    .setTitle("PieCord Ass")
     .setDescription("Here's an ass pic...")
     .setImage(url)
     .setTimestamp()
