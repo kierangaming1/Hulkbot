@@ -5,7 +5,7 @@ module.exports = (bot, guild, member) => {
     if (channel.topic.includes("bot log") || channel.name == names[0] || channel.name == names[1] || channel.name == names[2]) {
       const logchannel = channel
       const embed = new discord.RichEmbed()
-      .setTitle("Hulkbot Ban Logger")
+      .setTitle("PieCord Ban Logger")
       .setDescription(`${member.user.username} was unbanned from the server.`)
       .setFooter(`${member.user.username} unbanned from server.`)
       .setTimestamp()
