@@ -4,7 +4,7 @@ const admins = config.admins
 module.exports.run = (bot, message, args, discord) => {
   if (message.author.id == process.env.oid) {
     let em = new discord.RichEmbed()
-    .setTitle("Hulkbot Perms")
+    .setTitle("PieCord Perms")
     .setDescription("Your user ID is set as `process.env.oid`, you have full perms.")
     .setTimestamp()
     .setFooter(`Requested by ${message.author.username}.`)
@@ -13,7 +13,7 @@ module.exports.run = (bot, message, args, discord) => {
   } else {
     if (admins.includes(message.author.id)) {
       let em = new discord.RichEmbed()
-      .setTitle("Hulkbot Perms")
+      .setTitle("PieCord Perms")
       .setDescription("Your user ID is in the admin list, you have admin permissions.")
       .setTimestamp()
       .setFooter(`Requested by ${message.author.username}.`)
