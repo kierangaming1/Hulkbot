@@ -20,7 +20,7 @@ const gdata = require('./database/mongoose/GuildData')
 // End of init
 
 // The bot's support server invite vvv
-bot.invite = "https://discord.gg/qEFNkxB"
+bot.invite = "https://discord.gg/txgh6jW"
 // No more invite.
 
 // Gather commands
@@ -41,7 +41,7 @@ require('fs').readdir("./commands/", (err, files) => {
 bot.on("ready", () => {
   require('./util/poststats.js')(bot)
   require('./util/consoles.js')(bot, config)
-  bot.user.setActivity("Loading Hulkbot...", {type: "STREAMING", url: "https://twitch.tv/freakinghulk"})
+  bot.user.setActivity("Loading PieCord...", {type: "STREAMING", url: "https://twitch.tv/piecord"})
   // Post bot stats
   snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
     .set('Authorization', process.env.tok)
@@ -109,9 +109,9 @@ bot.on("message", message => {
     message.channel.send("oh god, not another one");
   }
   
-  if (message.isMentioned("589832011708104734")) {
+  if (message.isMentioned("548622504659255297")) {
     const em = new discord.RichEmbed()
-    .setTitle(`Animal Intro`)
+    .setTitle(`PieCord Intro`)
     .setDescription(`Hey! Welcome to my intro! For help, use !help! For info about me, use h!info!`)
     .setColor("GREEN")
     .setTimestamp()
@@ -135,10 +135,10 @@ bot.login(process.env.botToken);
 let upmsg = `Oh yeah, more updates! New updates:\n${updates}`
   async function senddat(up,msg) {
     if (up == null) return;
-   await bot.channels.get('591976394615947277').send(msg).then(() => {
+   await bot.channels.get('592308975949840393').send(msg).then(() => {
      up.pop(up)
    })
-   await bot.channels.get('591983009033355264').send(msg).then(() => {
+   await bot.channels.get('592308975949840393').send(msg).then(() => {
      up.pop(up)
    })
   }
