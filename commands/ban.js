@@ -7,7 +7,7 @@ module.exports.run = (bot, message, args, discord) => {
     let member = message.mentions.members.first();
     member.ban(reason).catch(console.error)
     let embed = new discord.RichEmbed()
-    .setTitle("Hulkbot Banning System")
+    .setTitle("PieCord Banning System")
     .setDescription(`:wave: Successfully Banned ${member.displayName} :point_right:`)
     .setColor("RED")
     .setThumbnail(bot.user.avatarURL)
