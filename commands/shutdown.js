@@ -1,8 +1,8 @@
 module.exports.run = (bot, message, args, discord) => {
   if (message.author.id == process.env.oid) {
     let embed = new discord.RichEmbed()
-      .setTitle("Hulkbot Shutdown")
-      .setDescription(":wave: Hulkbot will now shutdown... :cry:")
+      .setTitle("PieCord Shutdown")
+      .setDescription(":wave: PieCord will now shutdown... :cry:")
       .setThumbnail(bot.user.avatarURL)
       .setColor('BLUE')
     message.channel.send({ embed })
