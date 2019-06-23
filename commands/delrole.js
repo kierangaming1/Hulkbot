@@ -11,7 +11,7 @@ module.exports.run = (bot, message, args) => {
   
   member.removeRole(roleid);
   let em = new discord.RichEmbed()
-  .setTitle("Hulkbot Delrole")
+  .setTitle("PieCord Delrole")
   .setDescription(`Okay! I removed the role ${rolename} from user ${member.user.username}.`)
   .setTimestamp()
   .setFooter(`${message.author.username} removed role ${rolename} from user ${member.user.username}.`)
