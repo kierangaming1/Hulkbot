@@ -2,9 +2,9 @@ module.exports.run = (bot, message, args, discord) => {
   bot.guilds.forEach(async ga => {
     let ids = ga.id
     let em = new discord.RichEmbed()
-    .setTitle("Hulkbot Server IDs")
+    .setTitle("PieCord Server IDs")
     .setDescription(`All my server ids are ${ids}`)
-    .setAuthor("Hulkbot")
+    .setAuthor("PieCord")
     .setColor("RANDOM")
     .setThumbnail(bot.user.avatarURL)
     .setTimestamp()
