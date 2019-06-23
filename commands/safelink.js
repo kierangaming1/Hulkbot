@@ -11,7 +11,7 @@ module.exports.run = (bot, message, args) => {
       .addField("Link Checker", `Link: ${bod.chain[0].url}\nIs this link safe? ${bod.chain[0].safe}\n`)
       .setTimestamp()
       .setColor("RANDOM")
-      .setFooter("Hulkbot Link Checker")
+      .setFooter("PieCord Link Checker")
       message.channel.send({embed: emb})
       
       if (!res.statusCode == "200") {
@@ -19,7 +19,7 @@ module.exports.run = (bot, message, args) => {
        .addField("Link Checker", `Your link, ${bod.chain[0].url}, is invalid!`)
        .setTimestamp()
        .setColor("RANDOM")
-       .setFooter("Hulkbot Link Checker")
+       .setFooter("PieCord Link Checker")
        message.channel.send({embed: embed})
       }
     }
