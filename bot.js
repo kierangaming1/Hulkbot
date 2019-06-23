@@ -9,13 +9,13 @@ var prefix = process.env.prefix,
 {baselogger} = require('./src/logger.js'),
 result = Math.round(Math.random()),
 updates = ["Work command added.", "MongoDB is now Hulkbot's official database provider."],
-webhookchannelid = "591977587903954954",
+webhookchannelid = "592330766843904020",
 cleverbot = require('cleverbot.io'),
 ms = require('ms'),
 snekfetch = require('snekfetch'),
 cb = new cleverbot("sMNApmkOjMlZRlPZ", "gskxw3JBqEVGIAboBjOnvyTf8awM1MbS")
 config.updates = updates.join(' ')
-require('mongoose').connect(`mongodb+srv://Hulkbot:${process.env.mongopassword}@hulkbot-2fias.gcp.mongodb.net/test?retryWrites=true`, { useNewUrlParser: true })
+require('mongoose').connect(`mongodb+srv://discbot:${process.env.mongopassword}@cluster0-9y6rl.mongodb.net/test?retryWrites=true&w=majority`, { useNewUrlParser: true })
 const gdata = require('./database/mongoose/GuildData')
 // End of init
 
